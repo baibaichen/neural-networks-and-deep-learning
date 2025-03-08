@@ -1,6 +1,6 @@
 # Numpy has introduced a change that breaks compability with theano, therefor we're not gonna use newer versions
-numpy < 1.22
-matplotlib==3.*
-scikit-learn < 1.1
-scipy==1.*
-theano
+numpy == 2.2.3
+matplotlib==3.10.1
+scikit-learn == 1.6.1
+scipy==1.15.2
+theano==1.0.5
