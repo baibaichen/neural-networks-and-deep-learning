@@ -52,7 +52,13 @@ class Network(object):
         self-explanatory.  If ``test_data`` is provided then the
         network will be evaluated against the test data after each
         epoch, and partial progress printed out.  This is useful for
-        tracking progress, but slows things down substantially."""
+        tracking progress, but slows things down substantially.
+        =========
+        使用小批量随机梯度下降算法训练神经网络。
+        training_data 是由训练输入和目标输出的元组(x, y) 组成的列表。
+        其他非可选参数容易理解。如果提供了test_data，
+        那么神经网络会在每轮训练结束后用测试数据进行评估，
+        并输出部分进度信息。这对于追踪进度很有用，不过会延长整体处理时间。"""
         if test_data: n_test = len(test_data)
         n = len(training_data)
         for j in range(epochs):
